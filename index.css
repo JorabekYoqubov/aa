@@ -1,0 +1,52 @@
+.parent{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1174px;
+	margin: auto;
+	flex-wrap: wrap;
+
+}
+.child{
+	width: calc(100% / 5);
+	padding: 12px;
+	margin: 12px;
+	background-color: white;
+}
+img{
+	width: 100%;
+}
+body{
+	background-color: #f8f8f8;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8rems;
+}
+button{
+	width: 100%;
+	padding: 12px 20px;
+	background-color: #f4f4f4;
+	outline: 0;
+	border: 0;
+	transition: all .3s ease;
+}
+button:hover{
+	background-color: #ffcd00;
+}
+@media screen and (max-width: 768px) {
+	.parent{
+		width: 100% !important;
+		justify-content: center !important;
+	}
+	.child{
+		width: calc(100% / 3) !important;
+	}
+}
+@media screen and (max-width: 1173px) {
+	.parent{
+		width: 100% !important;
+		justify-content: center;
+	}
+	.child{
+		width: calc(100% / 5.5);
+	}
+}
